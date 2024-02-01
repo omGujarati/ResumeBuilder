@@ -5,7 +5,7 @@ function addNewWEField(){
     newNode.classList.add("weField");
     newNode.classList.add("mt-2");
     newNode.setAttribute("rows", 3);
-    newNode.setAttribute("placeholder","Enter Objective")
+    newNode.setAttribute("placeholder","Enter work experience")
 
     let weOb=document.getElementById("we");
     let weAddButtonOb=document.getElementById("weAddButton");
@@ -21,12 +21,28 @@ function addNewAQField(){
     newNode.classList.add("eqField");
     newNode.classList.add("mt-2");
     newNode.setAttribute("rows", 3);
-    newNode.setAttribute("placeholder","Enter Objective")
+    newNode.setAttribute("placeholder","Enter Qualification")
 
     let aqOb=document.getElementById("aq");
     let aqAddButtonOb=document.getElementById("aqAddButton");
 
     aqOb.insertBefore(newNode,aqAddButtonOb);
+
+}
+
+function addNewPDField(){
+    console.log('hello');
+    let newNode=document.createElement("textarea");
+    newNode.classList.add("form-control");
+    newNode.classList.add("pdField");
+    newNode.classList.add("mt-2");
+    newNode.setAttribute("rows", 3);
+    newNode.setAttribute("placeholder","Enter Your Project")
+
+    let pdOb=document.getElementById("pd");
+    let pdAddButtonOb=document.getElementById("pdAddButton");
+
+    pdOb.insertBefore(newNode,pdAddButtonOb);
 
 }
 
@@ -63,6 +79,15 @@ function generateCV(){
     }
     document.getElementById("aqT").innerHTML=str1;
 
+    let pds=document.getElementsByClassName("pdField");
+    let str2="";
+
+    for(let e of pds)
+    {
+        str2+= `<li> ${e.value} </li>`;
+    }
+    document.getElementById("pdT").innerHTML=str2;
+
     let file=document.getElementById("imgField").files[0];
 
     let reader=new FileReader();
@@ -81,4 +106,9 @@ function generateCV(){
 
 function printCV(){
     window.print();
+}
+
+function main(){
+    window.open("index.html");
+    
 }
