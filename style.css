@@ -1,0 +1,102 @@
+#cv-template{
+    display: none;
+}
+
+#cv-form{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: white;
+}
+
+h1{
+    color:cadetblue;
+}
+
+button {
+    
+    font-size:6vh;
+    text-align:center;
+    position:relative;
+    border:none;
+  }
+
+  button#genCV{
+    background-color: cadetblue;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border: none;
+  }
+
+  button#genCV:hover{
+    background-color: white;
+    color: cadetblue;
+  }
+  
+  button#pdB,button#aqB,button#weB {
+    background-color:green;
+    color: white;
+    border:none;
+  }
+
+  button#pdB:hover{
+    background-color:white;
+    color: green;
+    border:none;
+  }
+
+  button#aqB:hover{
+    background-color:white;
+    color: green;
+    border:none;
+  }
+  
+  button#weB:hover {
+    background-color:white;
+    color: green;
+    border:none;
+  }
+  
+  button#2 {
+    background-color:yellow;
+  }
+
+.myimg{
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 200px;
+}
+
+.background{
+    background-color: bisque;
+}
+
+.backTo a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.backTo a:active {
+  color: blue;
+}
+
+.backTo a:hover{
+  text-decoration: underline;
+  color: cadetblue;
+}
+
+.backToForm a{
+  color: rgb(255, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.backToForm a:active {
+  color: blue;
+}
+
+.backToForm a:hover{
+  color: cadetblue;
+  text-decoration: underline;
+}
