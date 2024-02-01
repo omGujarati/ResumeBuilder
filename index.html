@@ -104,7 +104,7 @@
                 ></textarea>
             
                 <div class="container text-center mt-3 " id="weAddButton">
-                    <button onclick="addNewWEField()" class="btn btn-primary btn-sm">Add</button>
+                    <button id="weB" onclick="addNewWEField()" class="btn btn-primary btn-sm">Add</button>
                 </div>
             </div>
 
@@ -117,7 +117,20 @@
                 ></textarea>
                 
                 <div class="container text-center mt-3" id="aqAddButton">
-                    <button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+                    <button id="aqB" onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+                </div>
+            </div>
+
+            <div class="form-group mt-2" id="pd">
+                <label for="">Project Details</label>
+                <textarea                   
+                    placeholder="Enter Your Projects" 
+                    class="form-control pdField"
+                    rows="3"
+                ></textarea>
+                
+                <div class="container text-center mt-3" id="pdAddButton">
+                    <button  id="pdB" onclick="addNewPDField()" class="btn btn-primary btn-sm">Add</button>
                 </div>
             </div>
 
@@ -126,7 +139,11 @@
     </div>
 
     <div class="container text-center mt-3">
-        <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+        <button id="genCV" onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+    </div>
+
+    <div class="backTo">
+        <a href="main.html">Back to Main Page></a>
     </div>
 </div>
 
@@ -233,6 +250,30 @@
                 </div>        
             </div>
 
+            <div class="card mt-4">
+                <div class="card-header background">
+
+                </div>
+                <div class="card-header">
+                    <h3>
+                        Projects
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <ul id="pdT">
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minima dolor error fugit, perferendis, voluptate sit id autem commodi nobis tenetur suscipit dolorum repudiandae quisquam accusamus alias quibusdam aliquid omnis.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minima dolor error fugit, perferendis, voluptate sit id autem commodi nobis tenetur suscipit dolorum repudiandae quisquam accusamus alias quibusdam aliquid omnis.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minima dolor error fugit, perferendis, voluptate sit id autem commodi nobis tenetur suscipit dolorum repudiandae quisquam accusamus alias quibusdam aliquid omnis.
+                        </li>
+                    </ul>
+                </div>        
+            </div>
+
             <div class="container mt-3 text-center">
                 <button onclick="printCV()" class="btn background">
                     Print CV
@@ -240,6 +281,9 @@
             </div>
 
          </div>
+         <div class="backToForm">
+            <a href="main.html">Back to Main Page></a>
+        </div>
     </div>
 
 </div>
